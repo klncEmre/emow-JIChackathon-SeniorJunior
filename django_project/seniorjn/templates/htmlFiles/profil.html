@@ -1,0 +1,255 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SENIORJUNIOR - Connect to experts</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">senior@senior.com</a>
+        <i class="icofont-phone"></i> +90 555 555 5555
+        <i class="icofont-google-map"></i> Maslak, Istanbul
+      </div>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">Logo</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#fields">Fields</a></li>
+          <li><a href="#seniors">Seniors</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+      {% if user.is_authenticated %}
+      <a href="/profile" class="appointment-btn scrollto">Profile</a>
+      <a href="/logout" class="appointment-btn scrollto">Logout</a>
+      {% else %}
+      <a href="/register" class="appointment-btn scrollto">Register</a>
+      {% endif %}
+    </div>
+  </header>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+
+                <div class="card-body">
+                    <div class="card-title mb-4">
+                        <div class="d-flex justify-content-start">
+                            <div class="image-container">
+                                <img src="{{ user.profile.image.url }}" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+                                <div class="middle">
+                                    <input type="button" class="btn btn-secondary" id="btnChangePicture" value="Change" />
+                                    <input type="file" style="display: none;" id="profilePicture" name="file" />
+                                </div>
+                            </div>
+                            <div class="userData ml-3">
+                                <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"><a href="javascript:void(0);">{{user.username}}</a></h2>
+                                <h6 class="d-block">{{ user.major }} / {{ user.speciality }}</h6>
+                                <h6 class="d-block">{{ user.city }}</h6>
+                            </div>
+                            <div class="ml-auto">
+                                <input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="basicInfo-tab" data-toggle="tab" href="#basicInfo" role="tab" aria-controls="basicInfo" aria-selected="true">Basic Info</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices" role="tab" aria-controls="connectedServices" aria-selected="false">Connected Services</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content ml-1" id="myTabContent">
+                                <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
+                                    
+
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-2 col-5">
+                                            <label style="font-weight:bold;">Full Name</label>
+                                        </div>
+                                        <div class="col-md-8 col-6">
+                                            {{ user.nameSurname }}
+                                        </div>
+                                    </div>
+                                    <hr />
+
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-2 col-5">
+                                            <label style="font-weight:bold;">Age</label>
+                                        </div>
+                                        <div class="col-md-8 col-6">
+                                            {{ user.Age}}
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-2 col-5">
+                                            <label style="font-weight:bold;">Biography</label>
+                                        </div>
+                                        <div class="col-md-8 col-6">
+                                            {{ user.aciklama }}
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-2 col-5">
+                                            <label style="font-weight:bold;">Experiences</label>
+                                        </div>
+                                        <div class="col-md-8 col-6">
+                                            {{ user.experience }}
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-2 col-5">
+                                            <label style="font-weight:bold;">Companies</label>
+                                        </div>
+                                        <div class="col-md-8 col-6">
+                                            {{ user.companies }}
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-2 col-5">
+                                            <label style="font-weight:bold;">Awards</label>
+                                        </div>
+                                        <div class="col-md-8 col-6">
+                                            {{ user.oduller }}
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                                <div class="tab-pane fade" id="connectedServices" role="tabpanel" aria-labelledby="ConnectedServices-tab">
+                                    Facebook, Google, Twitter Account that are connected to this account
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3>EMOW</h3>
+                <p>
+                  Istanbul Technical University <br>
+                  Istanbul<br>
+                  Turkey <br><br>
+                  <strong>Phone:</strong> +90 555 5555<br>
+                  <strong>Email:</strong> seniorjunior@emow.com<br>
+                </p>
+              </div>
+  
+              <div class="col-lg-2 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Seniors</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Register</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container d-md-flex py-4">
+  
+          <div class="mr-md-auto text-center text-md-left">
+            <div class="copyright">Made with ❤ by EMOW</div>
+          </div>
+        </div>
+      </footer><!-- End Footer -->
+  
+      <div id="preloader"></div>
+      <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  
+      <!-- Vendor JS Files -->
+      <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+      <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js' %}"></script>
+  
+      <!-- Template Main JS File -->
+      <script src="{% static 'assets/js/main.js' %}"></script>
+  
+  </body>
+  
+  </html>
+
