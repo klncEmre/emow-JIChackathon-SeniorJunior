@@ -2,52 +2,78 @@
 <html>
 <head>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>SeniorJunior</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'cssfiles/main.css' %}">
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/logo.png' %}" rel="icon">
+  <link href="{% static 'assets/img/logo.png' %}" rel="apple-touch-icon">
 
-    {% if title %}
-        <title>Django Blog - {{ title }}</title>
-    {% else %}
-        <title>Django Blog</title>
-    {% endif %}
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-        <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'seniorjn-home' %}">Django Blog</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarToggle">
-            <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="{% url 'seniorjn-home' %}">Home</a>
-              <a class="nav-item nav-link" href="{% url 'seniorjn-about' %}">About</a>
-            </div>
-            <!-- Navbar Right Side -->
-            <div class="navbar-nav">
-              {% if user.is_authenticated %}
+<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">seniorjunior@emow.com</a>
+        <i class="icofont-phone"></i> +90 XXX XXX XXXX
+        <i class="icofont-google-map"></i> Maslak, Istanbul
+      </div>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
 
-                <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
-                <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
-              {% else %}
-                <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
-              {% endif %}
-            </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
 
+      <!-- <h1 class="logo mr-auto"><a href="index.html">Logo</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo mr-auto"><img src="{% static 'assets/img/logo.png' %}" alt="" class="img-fluid"></a>
 
-          </div>
-
-        </div>
-      </nav>
-    </header>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#fields">Fields</a></li>
+          <li><a href="#seniors">Seniors</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+      {% if user.is_authenticated %}
+      <a href="/profile" class="appointment-btn scrollto">Profile</a>
+      <a href="/logout" class="appointment-btn scrollto">Logout</a>
+      {% else %}
+      <a href="/register" class="appointment-btn scrollto">Register</a>
+      {% endif %}
+    </div>
+  </header>
 
     <main role="main" class="container">
       <div class="row">

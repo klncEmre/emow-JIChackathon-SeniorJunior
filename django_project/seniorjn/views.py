@@ -4,8 +4,7 @@ from django.contrib.auth.models import User
 from django.views.generic import DetailView
 
 import sys
-sys.path.insert(1, '/Users/emrekilinc/Desktop/hackatho/JIC-hackathon/django_project/users')
-#this should be your users folder path!!!
+sys.path.insert(1, '/Users/emrekilinc/Desktop/hackatho/last/JIC-hackathon/django_project/users')
 from users import models
 
 

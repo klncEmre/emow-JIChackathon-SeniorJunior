@@ -7,13 +7,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>SENIORJUNIOR - Connect to experts</title>
+  <title>SeniorJunior</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="{% static 'assets/img/logo.png' %}" rel="icon">
+  <link href="{% static 'assets/img/logo.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -40,8 +40,8 @@
   <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
-        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">senior@senior.com</a>
-        <i class="icofont-phone"></i> +90 555 555 5555
+        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">seniorjunior@emow.com</a>
+        <i class="icofont-phone"></i> +90 XXX XXX XXXX
         <i class="icofont-google-map"></i> Maslak, Istanbul
       </div>
       <div class="social-links">
@@ -58,9 +58,9 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">Logo</a></h1>
+      <!-- <h1 class="logo mr-auto"><a href="index.html">Logo</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="index.html" class="logo mr-auto"><img src="{% static 'assets/img/logo.png' %}" alt="" class="img-fluid"></a>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -82,7 +82,7 @@
   <!-- ======= Jumbotron Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
-      <h1>Welcome to SENIORJUNIOR</h1>
+      <h1>Welcome to SeniorJunior</h1>
       <h2>We offer you to connect to experts in various fields.</h2>
       <a href="#about" class="btn-get-started scrollto">Get Started</a>
     </div>
@@ -99,10 +99,8 @@
             <div class="content">
               <h3>Why Should You Use?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad
-                corporis.
+                Do you want to skyrocket you junior years and become a SeniorJunior?<br>
+                Please watch the video below :) 
               </p>
             </div>
           </div>
@@ -114,15 +112,14 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container-fluid">
-        <div class="col-xl-8 col-lg-8 mx-auto video-box d-flex justify-content-center align-items-stretch">
-          <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
-            data-autoplay="true"></a>
+          <div class="col-xl-8 col-lg-8 mx-auto video-box d-flex justify-content-center align-items-stretch">
+            <a href="https://www.youtube.com/watch?v=pKO9UjSeLew" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
         </div>
-      </div>
 
       </div>
     </section><!-- End About Section -->
-
+    
 
     <!-- ======= Fields Section ======= -->
     <section id="fields" class="fields">
@@ -130,9 +127,8 @@
 
         <div class="section-title">
           <h2>Fields</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <p>We offer you various fields to fulfill your needs.</p>
+          <p>Whatever you need we got it ;)</p>
         </div>
 
         <div class="row">
@@ -161,11 +157,8 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Computer Engineering</h3>
-                    <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata
-                      raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa
-                      odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni
-                      nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                    <p class="font-italic">Front-end to Back-end, Python to Java. Ask Senior Engineers whatever you need.</p>
+                    <p>You can ask our Senior Engineers which career path to choose, if your field is propariate for you, what is it like to work where they work etc. Just pick an engineer an ask anything that crosses your mind</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/fields-1.jpg" alt="" class="img-fluid">
@@ -176,11 +169,8 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Medicine</h3>
-                    <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata
-                      raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt
-                      est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque
-                      beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    <p class="font-italic">Bones to Muscles, Hospitals to Cardiomusclar studies. Ask the best Doctors whatever you need.</p>
+                    <p>You can connect to our Doctors which career path to choose, if your field is propariate for you, what is it like to work where they work etc. Just pick an  doctor an ask anything that crosses your mind</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/fields-2.jpg" alt="" class="img-fluid">
@@ -191,11 +181,8 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Photography</h3>
-                    <p class="font-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus
-                      non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque
-                      necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum
-                      odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                    <p class="font-italic">Lenses to Cameras, Salaries to Work Enviroments. Ask the best Photographers whatever you need.</p>
+                    <p>Photography is the art, application and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science, manufacturing , and business, as well as its more direct uses for art, film and video production, recreational purposes, hobby, and mass communication.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/fields-3.jpg" alt="" class="img-fluid">
@@ -206,11 +193,8 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Architecture</h3>
-                    <p class="font-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis
-                      delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam
-                      fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores
-                      sed qui veritatis aperiam quia a laborum inventore</p>
+                    <p class="font-italic">Lenses to Cameras, Salaries to Work Enviroments. Ask the best Photographers whatever you need.</p>
+                    <p>Architecture is both the process and the product of planning, designing, and constructing buildings or other structures. Architectural works, in the material form of buildings, are often perceived as cultural symbols and as works of art. Historical civilizations are often identified with their surviving architectural achievements.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/fields-4.jpg" alt="" class="img-fluid">
@@ -221,10 +205,8 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Law</h3>
-                    <p class="font-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut
-                      quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae
-                      molestiae voluptate vel</p>
+                    <p class="font-italic">Seus to Mock-trials, Salaries to Work Enviroments. Ask the best Photographers whatever you need.</p>
+                    <p>Law is a system of rules created and enforced through social or governmental institutions to regulate behavior, with its precise definition a matter of longstanding debate. It has been variously described as a science and the art of justice.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/fields-5.jpg" alt="" class="img-fluid">
@@ -244,10 +226,11 @@
 
         <div class="section-title">
           <h2>Seniors</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <p>We got the BESTS!<br>
+          Here is some of them...</p>
         </div>
+
+        <div class="row">
         <form action="{% url 'search' %}" method="get">
           {%csrf_token%}
           <input type="text" name="search" />
@@ -271,6 +254,80 @@
             {% endfor %}
         </div>
 
+        <!-- STATIC BORANIN YAPTIĞI !!!!!!!!!!!!!! -->
+
+<!--
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/seniors/seniors-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Tech Lead</h4>
+                <span>Computer Engineer</span>
+                <p>Ex-Google/ex-Facebook tech lead, multi-millionaire</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/seniors/seniors-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. OZ</h4>
+                <span>Doctor</span>
+                <p>Cardiac Surgeon and Host of The Dr. Oz Show</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/seniors/seniors-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>Photographer</span>
+                <p>Courtesy of editor and photographer extraordinaire</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/seniors/seniors-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Architect</span>
+                <p>Intimate maximalist, interior + exterior designer</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+ -->
+
       </div>
     </section><!-- End Seniors Section -->
 
@@ -280,74 +337,45 @@
 
         <div class="section-title">
           <h2>Answer These Questions</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <p>Here are some data that we have collected...<br>Answer them on your own and compare your results to others</p>
         </div>
 
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse"
-                href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i
-                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Alanınızla iligili deneyimli insanlara kolaylıkla ulaşabiliyor musunuz? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
-                <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
-                  gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                </p>
+                <p>%20 evet %80 hayır  </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2"
-                class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i
-                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Alanınızda çalışan deneyimli kişilerden tavsiye almak ister misiniz? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-parent=".faq-list">
-                <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
-                  donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
-                  ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                </p>
+                <p>%90 evet %10 hayır   </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3"
-                class="collapsed">Dolor sit amet consectetur adipiscing elit? <i
-                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Kariyer hayatınız için maddi yatırımlar yapar mısınız?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-parent=".faq-list">
-                <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
-                  integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
-                  Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi
-                  quis
-                </p>
+                <p>%90 evet %10 hayır </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4"
-                class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i
-                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">İş hayatıyla ilgili sorularınızı sorabileceğiniz çevreniz var mı<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-parent=".faq-list">
                 <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc
-                  vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus
-                  gravida quis blandit turpis cursus in.
-                </p>
+                  %20 evet %80 hayır
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5"
-                class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem
-                dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Kariyeriniz için bir mentora ihtiyaç duyar mısınız? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-parent=".faq-list">
                 <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
-                  nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis
-                  tellus in metus vulputate eu scelerisque.
+                  %90 evet %10 hayır
                 </p>
               </div>
             </li>
@@ -364,9 +392,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <p>If you want to contact us, here you go...</p>
         </div>
       </div>
       <div class="container">
@@ -388,7 +414,7 @@
               <div class="phone">
                 <i class="icofont-phone"></i>
                 <h4>Call:</h4>
-                <p>+90 555 5555</p>
+                <p>+90 XXX XXX XXXX</p>
               </div>
 
             </div>
@@ -415,7 +441,7 @@
               Istanbul Technical University <br>
               Istanbul<br>
               Turkey <br><br>
-              <strong>Phone:</strong> +90 555 5555<br>
+              <strong>Phone:</strong> +90 XXX XXX XXXX<br>
               <strong>Email:</strong> seniorjunior@emow.com<br>
             </p>
           </div>
@@ -426,68 +452,39 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Seniors</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Register</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Register</a></li>              
             </ul>
           </div>
+          <div class="col-lg-2 col-md-6 footer-links"><img src="{% static 'assets/img/SJ_LOGO_no_circle.png' %}" alt="" class="img-fluid myclass"></div>
+          <div><img src="{% static 'assets/img/EMOW_LOGO_turquise.png' %}" alt="" class="img-fluid myclass"></div>
         </div>
       </div>
     </div>
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
+    <div class="container d-md-flex py-4">
 
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>EMOW</h3>
-              <p>
-                Istanbul Technical University <br>
-                Istanbul<br>
-                Turkey <br><br>
-                <strong>Phone:</strong> +90 555 5555<br>
-                <strong>Email:</strong> seniorjunior@emow.com<br>
-              </p>
-            </div>
-
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Seniors</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Register</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright myclasscopyright">Made with ❤ by EMOW</div>
       </div>
+    </div>
+  </footer><!-- End Footer -->
 
-      <div class="container d-md-flex py-4">
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-        <div class="mr-md-auto text-center text-md-left">
-          <div class="copyright">Made with ❤ by EMOW</div>
-        </div>
-      </div>
-    </footer><!-- End Footer -->
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js' %}"></script>
 
-    <div id="preloader"></div>
-    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-    <!-- Vendor JS Files -->
-    <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
-    <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js' %}"></script>
-
-    <!-- Template Main JS File -->
-    <script src="{% static 'assets/js/main.js' %}"></script>
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
 
